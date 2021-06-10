@@ -106,8 +106,8 @@ dist
 .tern-port
 
 #server.cert and server.key
-.cert
-.key
+server.cert
+server.key
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test

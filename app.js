@@ -24,7 +24,9 @@ const authRoutes = require("./routes/auth");
 const User = require("./models/user");
 
 // constants username: , password:
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.fjhfb.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE} `;
+// const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.fjhfb.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE} `;
+const MONGODB_URI =
+  `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.fjhfb.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
 
 // import controllers
 const errorController = require("./controllers/error");
@@ -63,8 +65,8 @@ console.log(process.env.NODE_ENV);
 // initialize cross-site-register-forgery Protectoin String
 const csrfProtection = csrf();
 
-const privateKey = fs.readFileSync("server.key");
-const certificate = fs.readFileSync("server.cert");
+// const privateKey = fs.readFileSync("server.key");
+// const certificate = fs.readFileSync("server.cert");
 
 const accessLogSteam = fs.createWriteStream(
   path.join(__dirname, "access.log"),
