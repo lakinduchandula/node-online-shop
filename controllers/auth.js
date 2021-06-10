@@ -6,12 +6,12 @@ const { validationResult } = require("express-validator");
 const User = require("../models/user");
 
 const transporter = nodemailer.createTransport({
-  host: "smtp-mail.outlook.com",
+  host: "smtp-mail.xxxxxx.com",
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: "projects.lakinduchandula@outlook.com", // email address
-    pass: "testing@123", // email password
+    user: "xxx@xxx.xx", // email address
+    pass: "xxxxxxxxxx", // email password
   },
 });
 
