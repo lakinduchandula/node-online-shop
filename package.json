@@ -1,0 +1,44 @@
+{
+  "name": "node__academind",
+  "version": "1.0.0",
+  "description": "Learning node js with Node Complete Guid",
+  "main": "app.js",
+  "engines": {
+    "node": "14.17.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "MONGO_USER=online-shop-node-application MONGO_PASSWORD=6C65rHM7bQbxsPPn MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51IyWS2DKWbb0YVu6KiDZIy9XoGwJ7PcUpxM7XDMjtwiCvYYipoLVt6fF3ivwKuU4k0EPuwh766XqFCSvrI8SXabs00i8BEJ41R node app.js",
+    "start-server":"node app.js",
+    "start:dev":"nodemon app.js"
+  },
+  "author": "Lakindu Chandula - lakindu.chandula@outlook.com",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.4.1",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.11.1",
+    "helmet": "^4.6.0",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.12.10",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nanoid": "^3.1.23",
+    "nodemailer": "^6.6.1",
+    "npm": "^7.13.0",
+    "pdfkit": "^0.12.1",
+    "stripe": "^8.151.0",
+    "unique-string": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}
